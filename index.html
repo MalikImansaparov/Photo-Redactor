@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>JS</title>
+</head>
+<body>
+
+<div class="app">
+  <div class="box image">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg"
+      alt=""
+      id="image"
+    >
+
+    <div class="input">
+      <input
+        id="img-url"
+        type="text"
+        placeholder="Введите URL картинки"
+        value="https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg"
+      >
+    </div>
+  </div>
+  <div class="box settings">
+    <div class="sliders">
+      <div class="slider">
+        <label for="grayscale">Оттенки серого</label>
+        <input type="range" min="0" max="100" value="0" id="grayscale">
+      </div>
+
+      <div class="slider">
+        <label for="contrast">Контраст</label>
+        <input type="range" min="50" max="200" value="100" id="contrast">
+      </div>
+
+      <div class="slider">
+        <label for="brightness">Яркость</label>
+        <input type="range" min="50" max="200" value="100" id="brightness">
+      </div>
+
+      <div class="slider">
+        <label for="sepia">Сепия</label>
+        <input type="range" min="0" max="100" value="0" id="sepia">
+      </div>
+
+      <div class="slider">
+        <label for="saturate">Насыщенность</label>
+        <input type="range" min="0" max="200" value="100" id="saturate">
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn" id="reset" disabled>Сбросить</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
